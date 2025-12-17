@@ -1,0 +1,55 @@
+credit-analytics-rag-chatbot/
+│
+├── data/
+│   ├── raw/
+│   │   ├── customers.csv
+│   │   ├── loan_applications.csv
+│   │   ├── repayments.csv
+│   │   └── portfolio_snapshot.csv
+│   │
+│   ├── processed/
+│   │   └── merged_portfolio.parquet
+│
+├── documents/                     # RAG Corpus
+│   ├── credit_policy.pdf
+│   ├── underwriting_guidelines.pdf
+│   ├── rbi_lending_norms.pdf
+│   └── risk_thresholds.txt
+│
+├── embeddings/
+│   └── faiss_index/
+│
+├── src/
+│   ├── ingestion/
+│   │   ├── load_structured_data.py
+│   │   └── load_documents.py
+│   │
+│   ├── analytics/
+│   │   ├── kpi_calculations.py
+│   │   ├── segmentation.py
+│   │   └── early_warning.py
+│   │
+│   ├── rag/
+│   │   ├── chunking.py
+│   │   ├── embedding.py
+│   │   ├── retriever.py
+│   │   └── rag_pipeline.py
+│   │
+│   ├── query_router/
+│   │   └── intent_classifier.py
+│   │
+│   ├── llm/
+│   │   └── prompt_templates.py
+│   │
+│   ├── api/
+│   │   └── main.py              # FastAPI backend
+│   │
+│   └── utils/
+│       └── logger.py
+│
+├── ui/
+│   └── streamlit_app.py
+│
+├── requirements.txt
+├── README.md
+└── .env

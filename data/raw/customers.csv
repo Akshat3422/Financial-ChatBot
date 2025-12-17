@@ -1,0 +1,9 @@
+customer_id,age,gender,employment_type,monthly_income,city,credit_score
+C001,28,M,Salaried,45000,Bengaluru,720
+C002,35,F,Salaried,60000,Delhi,690
+C003,42,M,Self-Employed,85000,Mumbai,650
+C004,30,F,Salaried,52000,Pune,750
+C005,48,M,Self-Employed,120000,Ahmedabad,680
+C006,26,M,Salaried,40000,Chennai,710
+C007,38,F,Self-Employed,90000,Jaipur,640
+C008,45,M,Salaried,70000,Kolkata,730

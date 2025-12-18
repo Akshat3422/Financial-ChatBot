@@ -1,8 +1,7 @@
 
 from langchain_groq import ChatGroq
 from ..utils.retrieve_context import retrieve_context
-from ..llm.prompt_templates import prompt # type: ignore
-
+from ..llm.prompt_templates import prompt
 
 # LLM
 chat_model = ChatGroq(model="llama-3.3-70b-versatile",temperature=2)

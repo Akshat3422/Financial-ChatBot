@@ -6,3 +6,10 @@ numpy
 langgraph
 Pypdf
 langchain_google_genai
+sentence-transformers 
+faiss-cpu
+python-dotenv
+ipykernel
+langchain_pinecone
+langchain_groq
+pinecone

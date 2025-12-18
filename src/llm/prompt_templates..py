@@ -1,11 +1,8 @@
-from langchain_core.prompts import (
-    ChatPromptTemplate,
-    HumanMessagePromptTemplate,
-    SystemMessagePromptTemplate
-)
+from langchain_core.prompts import ChatPromptTemplate,HumanMessagePromptTemplate,SystemMessagePromptTemplate
 
 
 # Prompt
+
 prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
@@ -32,3 +29,6 @@ If the answer cannot be found explicitly in the context, respond exactly with:
     ],
     input_variables=["context", "question"]
 )
+
+def get_prompt():
+    return prompt

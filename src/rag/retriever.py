@@ -20,6 +20,5 @@ def get_retriever(index=index,embedding=embedding):
         embedding=embedding,
         text_key="chunk_text"
     )
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
 
-    return retriever
+    return vectorstore

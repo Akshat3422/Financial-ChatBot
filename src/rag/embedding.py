@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 from pinecone import Pinecone
 from ..utils.chunk import chunk_documents
 from ..utils.pinecone_initializer import initialize_pinecone
-
 from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
 
 

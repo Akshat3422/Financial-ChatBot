@@ -4,11 +4,13 @@ from pinecone import Pinecone
 
 
 load_dotenv()
-def initialize_pinecone():
-    pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
 
-    index_name = "vectordb"
 
+pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
+index_name = "vectordb"
+
+
+def initialize_pinecone(index_name):
 # Check if index exists
     if not pc.has_index(index_name):
         pc.create_index_for_model(

@@ -9,7 +9,7 @@ load_dotenv()
 
 
 embedding=GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
-index=initialize_pinecone(index_name=os.getenv("INDEX_NAME"))
+index=initialize_pinecone(index_name=os.getenv("PINECONE_INDEX_NAME"))
 
 
 

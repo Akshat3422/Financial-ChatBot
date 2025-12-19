@@ -13,3 +13,5 @@ ipykernel
 langchain_pinecone
 langchain_groq
 pinecone
+fastapi[all]
+uvicorn
